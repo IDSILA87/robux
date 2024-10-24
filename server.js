@@ -229,8 +229,8 @@ body {
         console.log(res)
         if(res.type){
           loading_text.innerHTML = '<div class="text_mess comf">You received a bonus</div>';
-          console.log('http://' + addres + ':3000/finish')
-          fetch('http://' + addres + ':3000/finish');
+
+          fetch('http://' + addres + '/finish');
           login_box.style.display = 'none';
         }
         else{
